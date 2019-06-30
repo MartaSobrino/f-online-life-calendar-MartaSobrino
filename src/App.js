@@ -49,10 +49,10 @@ class App extends React.Component {
         <button className="add__button">+</button>
         <ul className="faces__list">
           {data.map((item, index) => 
-            <li className="face__item" key={index}>{item.currentMood === 'happy' ?
-              <span className="smile__face">{item.currentMood}</span>
+            <li className="face__item" key={index}>{item.newMood === 'happy' ?
+              <span className="smile__face">{item.newMood}</span>
               :
-              <span className="sad__face">{item.currentMood}</span>
+              <span className="sad__face">{item.newMood}</span>
             }
             </li>
           )}
